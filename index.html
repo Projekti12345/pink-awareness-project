@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MUAJI ROZË | Ndërgjegjësim për kancerin e gjirit</title>
+<style>
+:root{--pink:#d63384;--dark:#8e245b;--soft:#fff0f6;--ink:#30232c;--muted:#6e606a;--line:#f0d4e2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.7;color:var(--ink);background:#fffafd}
+a{color:var(--dark)}
+nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px;padding:17px 6%;background:white;border-bottom:1px solid var(--line)}
+.logo{font-weight:900;color:var(--dark);text-decoration:none;letter-spacing:1px}
+nav div:last-child{display:flex;gap:17px;flex-wrap:wrap}
+nav div:last-child a{text-decoration:none;font-size:.93rem;font-weight:bold}
+.hero{padding:75px 6%;color:white;background:linear-gradient(125deg,#742044,#c52c78 60%,#ed78ad)}
+.hero-inner,main{max-width:1080px;margin:auto}
+.eyebrow{font-size:.8rem;letter-spacing:2px;font-weight:bold;text-transform:uppercase}
+h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.08;margin:14px 0;max-width:850px}
+.hero p{max-width:720px;font-size:1.1rem}
+.btn{display:inline-block;border:2px solid var(--pink);border-radius:999px;padding:11px 19px;background:var(--pink);color:white;font-weight:bold;text-decoration:none;cursor:pointer;margin:8px 7px 0 0}
+.btn.light{background:white;color:var(--dark);border-color:white}
+.btn.outline{background:transparent;border-color:white}
+main{padding:0 6%}
+section{padding:55px 0}
+.tag{color:var(--pink);font-size:.8rem;letter-spacing:1.7px;font-weight:bold;text-transform:uppercase}
+h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.2;margin:8px 0 14px}
+.lead{max-width:790px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:17px;margin-top:24px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 25px #8e245b0a}
+.card h3{color:var(--dark);margin-top:0}
+.card p{color:var(--muted);margin-bottom:0}
+.notice{background:var(--soft);border-left:5px solid var(--pink);border-radius:10px;padding:17px 20px;margin-top:23px}
+.quiz-area{background:linear-gradient(#fff0f6,#fffafd);border-block:1px solid var(--line)}
+.quiz{background:white;border:1px solid var(--line);border-radius:20px;padding:clamp(17px,4vw,32px);margin-top:25px;box-shadow:0 14px 40px #6e1a460d}
+.progress{height:8px;background:#f6e3ec;border-radius:20px;overflow:hidden;margin:17px 0 25px}
+#bar{height:100%;width:0;background:linear-gradient(90deg,var(--dark),#f18ab8);transition:width .2s}
+fieldset{border:0;border-bottom:1px solid #f3e1e9;padding:20px 0;margin:0}
+legend{font-weight:bold;padding-bottom:10px;width:100%}
+.option{display:flex;gap:10px;align-items:flex-start;padding:11px 13px;border:1px solid #eadde4;border-radius:11px;margin:8px 0;cursor:pointer}
+.option:hover{background:#fff8fb;border-color:#df8bb4}
+.option:has(input:checked){background:var(--soft);border-color:var(--pink)}
+.option input{margin-top:6px;accent-color:var(--pink)}
+.option span{flex:1}
+.option.correct{background:#eaf8f0;border-color:#79c7a0}
+.option.wrong{background:#fff0f1;border-color:#e9a0aa}
+.feedback{display:none;border-radius:9px;padding:10px 13px;font-size:.93rem}
+.feedback.show{display:block}
+.feedback.good{background:#eaf8f0;color:#145d3c}
+.feedback.bad{background:#fff0f1;color:#842336}
+#result{display:none;background:var(--soft);border:1px solid var(--line);border-radius:15px;padding:20px;margin-top:22px}
+#result.show{display:block}
+#score{font-size:2rem;font-weight:900;color:var(--dark)}
+.small{font-size:.9rem;color:var(--muted)}
+footer{background:#321625;color:white;text-align:center;padding:30px 6%}
+footer .small{color:#f2d9e5}
+@media(max-width:650px){nav{align-items:flex-start;flex-direction:column}.hero{padding-top:48px}section{padding:40px 0}}
+</style>
+</head>
+<body>
+<nav>
+<a class="logo" href="#top">MUAJI ROZË 🎀</a>
+<div>
+<a href="#info">Informohu</a>
+<a href="#shenjat">Shenjat</a>
+<a href="#kujdesi">Kujdesi</a>
+<a href="#kuizi">Kuizi</a>
+<a href="#burimet">Burimet</a>
+</div>
+</nav>
+
+<header class="hero" id="top">
+<div class="hero-inner">
+<div class="eyebrow">Informim · Ndërgjegjësim · Mbështetje</div>
+<h1>Informimi është një hap drejt kujdesit.</h1>
+<p>Muaji Rozë na kujton rëndësinë e të mësuarit për kancerin e gjirit, njohjes së ndryshimeve të pazakonta dhe mbështetjes së njëri-tjetrit.</p>
+<a class="btn light" href="#info">Mëso më shumë ↓</a>
+<a class="btn outline" href="#kuizi">Provo kuizin →</a>
+</div>
+</header>
+
+<main>
+<section id="info">
+<div class="tag">01 · Informohu</div>
+<h2>Çfarë është kanceri i gjirit?</h2>
+<p class="lead">Kanceri i gjirit zhvillohet kur disa qeliza në gji rriten në mënyrë të pakontrolluar. Është më i shpeshtë te gratë, por mund të prekë edhe njerëz të gjinive të tjera. Informimi i besueshëm ndihmon njerëzit të kuptojnë shenjat dhe të kërkojnë këshillë mjekësore.</p>
+<div class="notice"><strong>Mbaje mend:</strong> Një ndryshim në gji nuk do të thotë patjetër kancer. Një profesionist shëndetësor mund të vlerësojë shkakun.</div>
+</section>
+
+<section id="shenjat">
+<div class="tag">02 · Njih shenjat</div>
+<h2>Vëre ndryshimin. Kërko këshillë.</h2>
+<p class="lead">Shenjat mund të kenë shkaqe të ndryshme. Nëse vëren një ndryshim të ri ose të pazakontë, kontakto një profesionist shëndetësor.</p>
+<div class="grid">
+<article class="card"><h3>01 · Gungë ose trashje</h3><p>Një gungë e re në gji ose në zonën e sqetullës.</p></article>
+<article class="card"><h3>02 · Ndryshim në formë</h3><p>Një ndryshim i ri në madhësi, formë ose pamjen e gjirit.</p></article>
+<article class="card"><h3>03 · Ndryshime të lëkurës</h3><p>Skuqje, gropëzime ose ndryshime të reja në lëkurë apo thithkë.</p></article>
+<article class="card"><h3>04 · Sekrecion i pazakontë</h3><p>Sekrecioni nga thithka, sidomos nëse ka gjak, duhet vlerësuar nga mjeku.</p></article>
+<article class="card"><h3>05 · Dhimbje e vazhdueshme</h3><p>Dhimbja mund të ketë shumë shkaqe. Tregoja mjekut nëse është e re ose nuk largohet.</p></article>
+<article class="card"><h3>06 · Kërko ndihmë</h3><p>Mos e diagnostiko veten nga interneti. Kërko këshillë profesionale.</p></article>
+</div>
+</section>
+
+<section id="kujdesi">
+<div class="tag">03 · Kujdesi shëndetësor</div>
+<h2>Informimi dhe kontrolli kanë rëndësi</h2>
+<div class="grid">
+<article class="card"><h3>Këshillohu me mjekun</h3><p>Pyet për kontrollet e përshtatshme sipas moshës, historisë familjare dhe rrethanave personale.</p></article>
+<article class="card"><h3>Njih trupin tënd</h3><p>Njohja e asaj që është e zakonshme për ty mund të ndihmojë të vëresh ndryshime të reja.</p></article>
+<article class="card"><h3>Jep mbështetje</h3><p>Dëgjo pa paragjykim, respekto privatësinë dhe ndaj informacion të besueshëm.</p></article>
+</div>
+<div class="notice"><strong>Shënim:</strong> Kjo faqe është edukative dhe nuk zëvendëson diagnozën ose këshillën e profesionistit shëndetësor. Mos prit për kontroll nëse vëren një ndryshim të ri.</div>
+</section>
+
+<section>
+<div class="tag">04 · Solidaritet</div>
+<h2>Askush nuk duhet të ndihet vetëm.</h2>
+<p class="lead">Një fjalë e mirë, dëgjimi me kujdes dhe ndihma për të gjetur informacion të saktë mund të bëjnë ndryshim. Çdo person meriton respekt, mbështetje dhe privatësi.</p>
+</section>
+</main>
+
+<div class="quiz-area" id="kuizi">
+<main>
+<section>
+<div class="tag">05 · Testo njohuritë</div>
+<h2>Kuiz interaktiv</h2>
+<p class="lead">Zgjidh një përgjigje për secilën pyetje. Pastaj kliko “Kontrollo përgjigjet” për të parë rezultatin dhe shpjegimet.</p>
+<form class="quiz" id="quiz">
+<strong>Sa ke mësuar?</strong>
+<span class="small" id="count" style="float:right">0 nga 6 të plotësuara</span>
+<div class="progress"><div id="bar"></div></div>
+<div id="questions"></div>
+<button class="btn" type="submit">Kontrollo përgjigjet</button>
+<button class="btn" type="button" id="retry" style="background:white;color:var(--dark)">Provo përsëri ↻</button>
+<p class="small" id="status" aria-live="polite">Zgjidh përgjigjet më sipër.</p>
+<div id="result" aria-live="polite" tabindex="-1">
+<div id="score"></div><h3 id="heading"></h3><p id="message"></p>
+</div>
+</form>
+</section>
+</main>
+</div>
+
+<main>
+<section id="burimet">
+<div class="tag">06 · Burime</div>
+<h2>Lexo më shumë</h2>
+<p class="lead">Për informacion shtesë, vizito burime të besueshme shëndetësore:</p>
+<ul>
+<li><a href="https://www.who.int/news-room/fact-sheets/detail/breast-cancer" target="_blank" rel="noopener noreferrer">Organizata Botërore e Shëndetësisë — Kanceri i gjirit</a></li>
+<li><a href="https://www.cancer.gov/types/breast" target="_blank" rel="noopener noreferrer">National Cancer Institute — Breast Cancer</a></li>
+<li><a href="https://www.nhs.uk/conditions/breast-cancer/" target="_blank" rel="noopener noreferrer">NHS — Breast cancer</a></li>
+</ul>
+<p class="small">Projekt edukativ. Për këshilla personale shëndetësore, kontakto një profesionist shëndetësor.</p>
+</section>
+</main>
+
+<footer>
+<p><strong>MUAJI ROZË 🎀</strong></p>
+<p>Informohu. Kujdesu. Mbështet.</p>
+<p class="small">Projekt edukativ për ndërgjegjësimin për kancerin e gjirit.</p>
+</footer>
+
+<script>
+const data = [
+{q:"1. Çfarë duhet të bësh nëse vëren një ndryshim të ri në gji?",o:["Ta injorosh në çdo rast","Të kërkosh këshillë nga një profesionist shëndetësor","Të marrësh ilaçe pa u këshilluar","Të mbështetesh vetëm te rrjetet sociale"],a:1,e:"Një profesionist shëndetësor mund ta vlerësojë ndryshimin dhe të këshillojë hapat e duhur."},
+{q:"2. A do të thotë çdo gungë në gji se personi ka kancer?",o:["Po, çdo gungë është kancer","Po, nëse nuk dhemb","Jo. Gungat mund të kenë shkaqe të ndryshme, por duhen vlerësuar","Asnjë gungë nuk ka nevojë për kontroll"],a:2,e:"Gungat mund të kenë shkaqe të ndryshme. Një ndryshim i ri duhet diskutuar me mjekun."},
+{q:"3. Cili është një qëllim kryesor i ndërgjegjësimit?",o:["Të përhapë frikë","Të zëvendësojë kontrollin mjekësor","Të përhapë informacion të saktë dhe të nxisë kujdesin","Të vendosë diagnozë përmes internetit"],a:2,e:"Ndërgjegjësimi ndihmon njerëzit të mësojnë, të kërkojnë këshilla dhe të mbështesin njëri-tjetrin."},
+{q:"4. Kush mund të këshillojë për kontrollet e përshtatshme sipas moshës dhe rrezikut?",o:["Një profesionist shëndetësor","Një reklamë e rastësishme","Vetëm një koment në internet","Askush nuk mund të këshillojë"],a:0,e:"Profesionistët shëndetësorë mund të japin këshilla duke marrë parasysh rrethanat individuale."},
+{q:"5. Si mund ta mbështesësh dikë që po kalon një sëmundje?",o:["Duke shpërndarë të dhënat e tij private","Duke e fajësuar","Duke rekomanduar trajtime të paverifikuara","Duke dëgjuar, respektuar privatësinë dhe ofruar mbështetje"],a:3,e:"Dëgjimi, respekti dhe ruajtja e privatësisë janë mënyra të dobishme për të mbështetur dikë."},
+{q:"6. A e zëvendëson kjo faqe një kontroll ose diagnozë mjekësore?",o:["Po, faqja mund të diagnostikojë","Jo, faqja është edukative dhe nuk zëvendëson profesionistin shëndetësor","Po, nëse lexohen të gjitha pjesët","Po, kuizi jep diagnozë"],a:1,e:"Faqja ofron informacion të përgjithshëm; vlerësimin dhe këshillën personale e jep profesionisti shëndetësor."}
+];
+
+const form=document.getElementById("quiz");
+const questions=document.getElementById("questions");
+const result=document.getElementById("result");
+function render(){
+ questions.innerHTML=data.map((item,i)=>`
+ <fieldset>
+ <legend>${item.q}</legend>
+ ${item.o.map((option,j)=>`<label class="option" data-q="${i}" data-a="${j}">
+ <input type="radio" name="q${i}" value="${j}" required><span>${option}</span>
+ </label>`).join("")}
+ <div class="feedback" id="feedback${i}"></div>
+ </fieldset>`).join("");
+}
+function update(){
+ let n=data.filter((_,i)=>form.querySelector('input[name="q'+i+'"]:checked')).length;
+ document.getElementById("count").textContent=n+" nga "+data.length+" të plotësuara";
+ document.getElementById("bar").style.width=(n/data.length*100)+"%";
+}
+questions.addEventListener("change",()=>{
+ update();
+ result.classList.remove("show");
+ document.querySelectorAll(".feedback").forEach(f=>f.className="feedback");
+ document.querySelectorAll(".option").forEach(o=>o.classList.remove("correct","wrong"));
+});
+form.addEventListener("submit",e=>{
+ e.preventDefault();
+ let score=0,unanswered=0;
+ data.forEach((item,i)=>{
+  let selected=form.querySelector('input[name="q'+i+'"]:checked');
+  let feedback=document.getElementById("feedback"+i);
+  let labels=questions.querySelectorAll('label[data-q="'+i+'"]');
+  labels.forEach(label=>{
+   label.classList.remove("correct","wrong");
+   if(Number(label.dataset.a)===item.a)label.classList.add("correct");
+  });
+  if(!selected){
+   unanswered++;
+   feedback.textContent="Zgjidh një përgjigje për këtë pyetje. "+item.e;
+   feedback.className="feedback show bad";
+   return;
+  }
+  if(Number(selected.value)===item.a){
+   score++;
+   feedback.textContent="Saktë! "+item.e;
+   feedback.className="feedback show good";
+  }else{
+   labels[Number(selected.value)].classList.add("wrong");
+   feedback.textContent="Përgjigjja e saktë është theksuar më sipër. "+item.e;
+   feedback.className="feedback show bad";
+  }
+ });
+ document.getElementById("score").textContent=score+" / "+data.length;
+ document.getElementById("heading").textContent=score===6?"Shkëlqyeshëm!":score>=4?"Punë shumë e mirë!":score>=2?"Vazhdo të mësosh!":"Koha për të mësuar më shumë.";
+ document.getElementById("message").textContent=unanswered?"Ke "+unanswered+" pyetje pa përgjigje. Mund t'i plotësosh dhe ta kontrollosh përsëri.":"Lexoji shpjegimet për të mësuar pse përgjigjet janë të sakta.";
+ result.classList.add("show");
+ document.getElementById("status").textContent="Kuizi u kontrollua.";
+ result.scrollIntoView({behavior:"smooth",block:"nearest"});
+});
+document.getElementById("retry").addEventListener("click",()=>{
+ form.reset();
+ result.classList.remove("show");
+ document.querySelectorAll(".feedback").forEach(f=>{f.textContent="";f.className="feedback"});
+ document.querySelectorAll(".option").forEach(o=>o.classList.remove("correct","wrong"));
+ update();
+ document.getElementById("status").textContent="Kuizi u rivendos. Provo përsëri!";
+ document.getElementById("kuizi").scrollIntoView({behavior:"smooth"});
+});
+render();
+update();
+</script>
+</body>
+</html>
